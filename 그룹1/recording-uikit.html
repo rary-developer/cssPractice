@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>uikit slide-show</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.16.3/dist/css/uikit.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.16.3/dist/js/uikit.min.js"></script>
+</head>
+<body>
+  <div uk-slideshow="
+    animation: slide;
+    autoplay-interval: 2000; 
+    autoplay: true; 
+    pause-on-hover:false;
+    draggable:false;"
+  >
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+
+        <ul class="uk-slideshow-items">
+            <li>
+                <img src="images/photo.jpg" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="images/dark.jpg" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="images/light.jpg" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="images/light.jpg" alt="" uk-cover>
+            </li>
+            <li>
+                <img src="images/light.jpg" alt="" uk-cover>
+            </li>
+        </ul>
+
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+    </div>
+
+    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+</div>
+</body>
+</html>
